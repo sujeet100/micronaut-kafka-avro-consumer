@@ -1,5 +1,15 @@
 ## Micronaut Kafka Consumer with Avro and Schema Registry
 
+###References
+https://kafka-tutorials.confluent.io/kafka-console-consumer-producer/kafka.html
+
+https://gist.github.com/martinhynar/c6ec4e29c79c78098952c0d5fd787890
+
+https://micronaut-projects.github.io/micronaut-kafka/1.1.1/guide/index.html#kafkaQuickStart
+
+
+
+
 ### start Kafka and other components
 ```shell
 docker compose -d up

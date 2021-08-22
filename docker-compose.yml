@@ -53,10 +53,10 @@ services:
       SCHEMA_REGISTRY_KAFKASTORE_BOOTSTRAP_SERVERS: 'broker:29092'
       SCHEMA_REGISTRY_LISTENERS: http://0.0.0.0:8081
     volumes:
-      - ./schema:/opt/app/schema/  
+      - ./schema:/opt/app/schema/
 
   connect:
-    image: connect-with-more-connectors
+    image: cnfldemos/cp-server-connect-datagen:0.5.0-6.2.0
     hostname: connect
     extra_hosts:
        -  "database:192.168.31.115"
