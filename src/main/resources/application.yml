@@ -1,0 +1,18 @@
+
+micronaut:
+  application:
+    name: bookshopService
+kafka:
+  bootstrap:
+    servers: localhost:9092
+  consumers:
+    default:
+      specific.avro.reader: true
+      key:
+        deserializer: org.apache.kafka.common.serialization.ByteArrayDeserializer
+      value:
+        deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
+      schema:
+        registry:
+          url: http://localhost:8081
+

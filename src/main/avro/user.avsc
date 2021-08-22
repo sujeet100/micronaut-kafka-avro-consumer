@@ -1,0 +1,38 @@
+{
+  "fields": [
+    {
+      "name": "table",
+      "type": "string"
+    },
+    {
+      "name": "op_type",
+      "type": "string"
+    },
+    {
+      "name": "primary_keys",
+      "type": {
+        "items": "string",
+        "type": "array"
+      }
+    },
+    {
+      "name": "USER_ID",
+      "type": "int"
+    },
+    {
+      "name": "NAME",
+      "type": "string"
+    },
+    {
+      "name": "AGE",
+      "type": "int"
+    },
+    {
+      "name": "CITY",
+      "type": "string"
+    }
+  ],
+  "name": "MYUSER",
+  "namespace": "GG",
+  "type": "record"
+}
