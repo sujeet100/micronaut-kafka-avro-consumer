@@ -14,10 +14,10 @@ public class UserJsonListener {
 
     @Topic("user-topic-json")
     public void receive(@KafkaKey @Nullable String key, @MessageBody MyUser user) {
-        System.out.println(user.getUSER_ID());
-        System.out.println(user.getNAME());
-        System.out.println(user.getAGE());
-        System.out.println(user.getCITY());
+        System.out.println(user.userId());
+        System.out.println(user.name());
+        System.out.println(user.age());
+        System.out.println(user.city());
     }
 }
 
