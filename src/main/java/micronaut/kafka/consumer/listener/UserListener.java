@@ -6,7 +6,7 @@ import io.micronaut.configuration.kafka.annotation.OffsetReset;
 import io.micronaut.configuration.kafka.annotation.Topic;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 
-@KafkaListener(offsetReset = OffsetReset.EARLIEST)
+@KafkaListener(offsetReset = OffsetReset.EARLIEST, groupId = "user-avro-consumer")
 public class UserListener {
 
     @Topic("user-topic-avro-new")
